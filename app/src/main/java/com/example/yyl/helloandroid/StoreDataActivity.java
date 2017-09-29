@@ -16,6 +16,7 @@ public class StoreDataActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_store_data);
 
         //设置监听对象
+
         findViewById(R.id.button4).setOnClickListener(this);//share存储
         findViewById(R.id.button5).setOnClickListener(this);//sqlLite存储
         findViewById(R.id.button6).setOnClickListener(this);//file存储
