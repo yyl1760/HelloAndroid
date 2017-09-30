@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //监听button2
         findViewById(R.id.button2).setOnClickListener(this);
         findViewById(R.id.button3).setOnClickListener(this);
+        findViewById(R.id.button14).setOnClickListener(this);
 
     }
 
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("data", "mainActivity");
                 startActivity(intent);
             }else if(v.getId() == R.id.button3){ //数据存储
+                Intent intent = new Intent(MainActivity.this, StoreDataActivity.class);
+                startActivity(intent);
+            }else if(v.getId() == R.id.button14){ //定位功能
                 Intent intent = new Intent(MainActivity.this, StoreDataActivity.class);
                 startActivity(intent);
             }
